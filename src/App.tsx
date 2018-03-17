@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { Component } from 'react';
 import Container from './Container';
-import ItemInput from './ItemInput';
-
+import Header from './components/Header';
+import Search from './Search';
 interface Props {}
 interface State {}
 
@@ -12,8 +12,8 @@ export default class App extends Component<Props, State> {
   render() {
     return (
       <Container>
-        <h1>Grocery List</h1>
-        <ItemInput />
+        <Header>Event Journal</Header>
+        <Search />
       </Container>
     );
   }

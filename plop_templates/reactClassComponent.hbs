@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 
 interface Props {
 
@@ -9,8 +9,13 @@ interface State {
 }
 
 export default class {{componentName}} extends React.Component<Props, State> {
-  state: State = {
-  };
+  constructor(props: Props) {
+    super(props);
+    this.state = {
+      displaySearch: false
+    };
+  }
+
 
   render() {
     return (
